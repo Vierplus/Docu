@@ -80,7 +80,7 @@
 ```json
 {
   "measurement_no": 1,
-  "measurement_timestamp": "2024-04-23T12:00:00Z",
+  "measurement_timestamp": "2024-04-23 12:00:00",
   "component_no": 1,
   "component_color_hex": "#336699",
   "component_color_name": "Blau",
