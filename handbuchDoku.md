@@ -15,7 +15,7 @@
    - Öffnen Sie das Terminal über die Menüleiste.
    - Geben Sie folgenden Befehl ein und drücken Sie Enter:
      ```bash
-     python /MESSESTAND/__main__.py
+     python MESSESTAND/__main__.py
      ```
    - Warten Sie, bis das Programm Rückmeldung gibt und Temperatur sowie Luftfeuchtigkeit ausgibt.
 
@@ -33,7 +33,26 @@
      ```
    - Warten Sie, bis sich der Browser öffnet und die Web-Anwendung anzeigt.
 
-## 3. Laptop 1 und Dobot
+## 3. Mosquitto Publisher Script starten
+
+1. **SSH-Verbindung zur VM aufbauen**
+
+   - Öffnen Sie das Terminal (CMD).
+   - Verbinden Sie sich zur VM durch Eingabe von:
+     ```bash
+     ssh fbs@100.108.16.72
+     ```
+   - Geben Sie das Passwort ein, wenn Sie dazu aufgefordert werden.
+
+2. **Publisher Script ausführen**
+   - Geben Sie den folgenden Befehl ein und drücken Sie Enter:
+     ```bash
+     python3 scripts/publisher.py
+     ```
+   - Warten Sie, bis "mqtt_client = mqtt.Client()" im Terminal angezeigt wird.
+   - Lassen Sie das Terminal geöffnet.
+
+## 4. Laptop 1 und Dobot
 
 1. **Dobot und Laptop verbinden**
 
